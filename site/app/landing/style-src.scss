@@ -1,0 +1,21 @@
+/* To match autumn_pyon.png */
+body {
+	background-color:rgb(255,230,217);
+}
+.nmg-landing-ad-box {
+	padding:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.nmg-landing-carousel {
+	margin-top:20px;
+}
+
+.nmg-landing-bg-sunflower {
+	background:url(./assets/img/landing/sunflower.png) repeat;
+	color:$summer-text-color;
+}
+.nmg-landing-bg-hoa-boat {
+	background:url(./assets/img/landing/hoa-boat.jpg) bottom;
+	color:$hoa-text-color;
+}

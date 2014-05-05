@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="container">
+		<h3 class="nmg-section-title">Curriculum</h3>
+
+		<tabset class="nmg-font">
+			<tab heading="Overview" ng-click="openPage('#/curriculum/overview')" active="tab.isOverviewActive"></tab>
+			<tab heading="Art Programs" ng-click="openPage('#/curriculum/art-programs')" active="tab.isArtProgActive"></tab>
+			<tab heading="Kindergarten" ng-click="openPage('#/curriculum/kindergarten')" active="tab.isKinderActive"></tab>
+			<tab heading="First Grade" ng-click="openPage('#/curriculum/1st-grade')" active="tab.isFirstActive"></tab>
+			<tab heading="Second Grade" ng-click="openPage('#/curriculum/2nd-grade')" active="tab.isSecondActive"></tab>
+			<tab heading="Third Grade" ng-click="openPage('#/curriculum/3rd-grade')" active="tab.isThirdActive"></tab>
+			<tab heading="Fourth Grade" ng-click="openPage('#/curriculum/4th-grade')" active="tab.isFourthActive"></tab>
+			<tab heading="Fifth Grade" ng-click="openPage('#/curriculum/5th-grade')" active="tab.isFifthActive"></tab>
+		</tabset>
+
+		<h2 class="nmg-page-title">{{title}}</h2>
+		<div ng-transclude>
+	</div>
+</div>

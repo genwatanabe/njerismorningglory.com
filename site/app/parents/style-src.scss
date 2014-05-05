@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Calendar
+   ========================================================================== */
+.nmg-parents-big-cal {
+  display:block;
+  width:100%;
+  height:630;
+  padding:15px;
+  margin:0 auto;
+}
+
+@media (min-width: 625px) {
+.nmg-parents-big-cal {
+  width:70%;
+}
+
+}

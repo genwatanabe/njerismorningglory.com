@@ -1,0 +1,27 @@
+<programs-directive title="Hands On Art" class="">
+    <img src="assets/img/programs/hoa-boat.jpg" class="nmg-bg">
+
+    <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <div ng-controller="HOACarouselCtrl">
+                <div>
+                    <carousel interval="myInterval" disableAnimation="true">
+                      <slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                          <h4>{{slide.text}}</h4>
+                        </div>
+                      </slide>
+                    </carousel>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+            <p class="lead">The classes are designed for children 3-15 years old.</p>
+            <p class="lead">Custom classes are available by arrangement with Njeri in advance.</p>
+            <p class="lead">To register for this art class, fill out the registration forms below and mail it in with your deposit:</p>
+            <a class="btn btn-primary btn-lg nmg-font" href="assets/pdf/programs/HANDS_ON_ART_2014_03to05.pdf">Get Registration Form for Mar 26 - May 16</a>
+        </div>
+    </div>
+
+</programs-directive>

@@ -1,0 +1,24 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+/* basic text color based on the current background theme. */
+/* $theme-text-color: #4E6DBE; /* dark blue */
+$theme-text-color: rgb(107,9,0); /* dark blue */
+
+$background-light-1: rgba(255,255,255,0.7);
+
+/* text color for summer theme.  */
+$summer-text-color: rgb(107,9,0);
+
+$theme-text-color: $summer-text-color;
+
+/* text color for Hands On Art.  */
+$hoa-text-color: rgb(244,238,126);
+
+@import "global/style-src.scss";
+@import "about/style-src.scss";
+@import "curriculum/style-src.scss";
+@import "landing/style-src.scss";
+@import "parents/style-src.scss";
+@import "programs/style-src.scss";

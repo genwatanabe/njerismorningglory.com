@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="container">
+		<h3 class="nmg-section-title">About</h3>
+
+		<tabset class="nmg-font">
+			<tab heading="Our School" ng-click="openPage('#/about/school')" active="tab.isSchoolActive"></tab>
+			<tab heading="Teachers" ng-click="openPage('#/about/teachers')" active="tab.isTeachersActive"></tab>
+			<tab heading="Contact Us" ng-click="openPage('#/about/contact')" active="tab.isContactActive"></tab>
+			<tab heading="Tours and Interviews" ng-click="openPage('#/about/tour')" active="tab.isTourActive"></tab>
+			<tab heading="What is Waldorf Education?" ng-click="openPage('#/about/waldorf')" active="tab.isWaldorfActive"></tab>
+		</tabset>
+
+		<h2 class="nmg-page-title">{{title}}</h2>
+		<div ng-transclude>
+	</div>
+</div>
