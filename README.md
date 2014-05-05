@@ -7,19 +7,21 @@ STEPS TO SET UP:
 2. Install Grunt CLI (will install grunt comamnd; does not install grunt task runner):
 	>sudo npm install -g grunt-cli
 3. Install grunt dependencies:
-	>npm install grunt --save-dev
-	>npm install grunt-bump --save-dev
-	>npm install grunt-contrib-clean --save-dev
-	>npm install grunt-contrib-sass --save-dev
-	>npm install grunt-contrib-copy --save-dev
-	>npm install grunt-contrib-concat --save-dev
-	>npm install grunt-contrib-uglify --save-dev
-	>npm install grunt-contrib-watch --save-dev
-	>npm install grunt-contrib-jslint --save-dev
-	>npm install grunt-contrib-csslint --save-dev
-	>npm install grunt-contrib-imagemin --save-dev
-	>npm install grunt-contrib-htmlmin --save-dev
-	>npm install grunt-ftp-deploy --save-dev
+	npm install --save-dev
+	OR run individually:
+	npm install grunt --save-dev
+	npm install grunt-bump --save-dev
+	npm install grunt-contrib-clean --save-dev
+	npm install grunt-contrib-sass --save-dev
+	npm install grunt-contrib-copy --save-dev
+	npm install grunt-contrib-concat --save-dev
+	npm install grunt-contrib-uglify --save-dev
+	npm install grunt-contrib-watch --save-dev
+	npm install grunt-contrib-jslint --save-dev
+	npm install grunt-contrib-csslint --save-dev
+	npm install grunt-contrib-imagemin --save-dev
+	npm install grunt-contrib-htmlmin --save-dev
+	npm install grunt-ftp-deploy --save-dev
 
 4. Install SASS (see https://github.com/gruntjs/grunt-contrib-sass):
 	>gem install sass
