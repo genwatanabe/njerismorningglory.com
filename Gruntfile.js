@@ -9,6 +9,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-ftp-deploy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   /**
    * Load in our user/task configuration files.
@@ -98,6 +99,17 @@ module.exports = function(grunt) {
           '<%= concat.compile_js.dest %>',
           '<%= sass.compile.files[0].dest %>'
         ]
+      }
+    },
+
+    imagemin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= img_src_dir %>/bg',
+          src: '**/*.{gif,GIF,jpg,JPG,jpeg,JPEG,png,PNG}',
+          dest: '<%= img_dst_dir %>/bg'
+        }]
       }
     },
 
@@ -249,6 +261,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['clean','concat','sass','index','bump']);
+  grunt.registerTask('minify-img', ['imagemin']);
   grunt.registerTask('deploy-app', ['ftp-deploy:app']);
   grunt.registerTask('deploy-php', ['ftp-deploy:php']);
   grunt.registerTask('deploy-img', ['ftp-deploy:img']);
