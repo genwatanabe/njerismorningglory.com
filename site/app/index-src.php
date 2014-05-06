@@ -20,6 +20,7 @@
 
     <title><?= $site_title; ?></title>
 
+    <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="common/bootstrap/css/bootstrap.css">
     
     <!-- compiled CSS styles files from grunt --><% styles.forEach( function ( file ) { %>
