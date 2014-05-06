@@ -2,21 +2,22 @@
     <img src="assets/img/programs/hoa-boat.jpg" class="nmg-bg">
 
     <div class="row">
-        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
             <div ng-controller="HOACarouselCtrl">
                 <div>
+                    <p class="lead text-center">20 Reasons Why Art is Good for Kids</p>
                     <carousel interval="myInterval" disableAnimation="true">
                       <slide ng-repeat="slide in slides" active="slide.active">
                         <img ng-src="{{slide.image}}" style="margin:auto;">
                         <div class="carousel-caption">
-                          <h4>{{slide.text}}</h4>
+                          <p class="lead">{{slide.text}}</p>
                         </div>
                       </slide>
                     </carousel>
                 </div>
             </div>
         </div>
-        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
             <p class="lead">The classes are designed for children 3-15 years old.</p>
             <p class="lead">Custom classes are available by arrangement with Njeri in advance.</p>
             <p class="lead">To register for this art class, fill out the registration forms below and mail it in with your deposit:</p>

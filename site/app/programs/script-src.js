@@ -56,7 +56,7 @@ programsModule.factory('HOACarouselService', ['$resource', function($resource) {
 }]);
 
 programsModule.controller('HOACarouselCtrl', ['$scope', 'HOACarouselService', function($scope, HOACarouselService) {
-  $scope.myInterval = 4000;
+  $scope.myInterval = 5000;
 
   HOACarouselService.query(function(data){
     $scope.slides = data;
