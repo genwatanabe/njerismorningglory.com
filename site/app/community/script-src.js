@@ -14,7 +14,7 @@ communityModule.directive('communityDirective', function() {
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$location', '$element', 'GlobalData', function($scope, $location, $element, GlobalData) {
+        controller: ['$scope', '$rootScope', '$location', '$element', 'GlobalData', function($scope, $rootScope, $location, $element, GlobalData) {
             $scope.gData = GlobalData;
             $scope.openPage = function(path) {
                 document.location = path;
@@ -33,6 +33,9 @@ communityModule.directive('communityDirective', function() {
                     $scope.tab.isLinksActive    = true;
                     break;
             }
+
+            // Change the header/footer area text style by the theme of the background.
+            $rootScope.nmgThemeTextClass = "nmg-theme-text-community";
         }],
         transclude: true,
         templateUrl: 'app/community/_template.html',

@@ -13,7 +13,7 @@ curriculumModule.directive('curriculumDirective', function() {
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$location', '$element', 'GlobalData', function($scope, $location, $element, GlobalData) {
+        controller: ['$scope', '$rootScope', '$location', '$element', 'GlobalData', function($scope, $rootScope, $location, $element, GlobalData) {
             $scope.gData = GlobalData;
             $scope.openPage = function(path) {
                 document.location = path;
@@ -56,6 +56,9 @@ curriculumModule.directive('curriculumDirective', function() {
                     $scope.tab.isFifthActive = true;
                     break;
             }
+
+            // Change the header/footer area text style by the theme of the background.
+            $rootScope.nmgThemeTextClass = "nmg-theme-text-curriculum";
         }],
         transclude: true,
         templateUrl: 'app/curriculum/_template.html',

@@ -174,6 +174,9 @@ app.controller("AppCtrl", ['$scope', '$rootScope', '$route', '$location', '$http
   // This event fires AFTER the routing succeeded.
   $rootScope.$on("$routeChangeSuccess", function(event, current, previous, resolve) {
       //console.log("AppCtrl:$routeChangeSuccess", $scope, $rootScope, $route, $location);
+      
+      // Change the header/footer area text style by the theme of the background.
+      $rootScope.nmgThemeTextClass = "nmg-theme-text-default";
   });
 
   // Initialize menu visibility. Hide by default.

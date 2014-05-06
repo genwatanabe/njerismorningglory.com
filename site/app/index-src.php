@@ -50,32 +50,32 @@
       <?php if (nmg_is_logged()) { ?>
         <div class="nmg-menu-btn" ng-click="logoutButtonClick($event)">
           <a href="?logout">
-            <h5 class="center nmg-menu-btn-title">Sign Out</h5>
-            <i class="nmg-menu-btn-icon glyphicon glyphicon-log-out"></i>
+            <h5 class="center {{nmgThemeTextClass}} nmg-menu-btn-title">Sign Out</h5>
+            <i class="{{nmgThemeTextClass}} nmg-menu-btn-icon glyphicon glyphicon-log-out"></i>
           </a>
         </div>
       <?php } else { ?>
         <div class="nmg-menu-btn" ng-click="loginButtonClick($event)">
-          <h5 class="center nmg-menu-btn-title">Sign In</h5>
-          <i class="nmg-menu-btn-icon glyphicon glyphicon-log-in"></i>
+          <h5 class="center {{nmgThemeTextClass}} nmg-menu-btn-title">Sign In</h5>
+          <i class="{{nmgThemeTextClass}} nmg-menu-btn-icon glyphicon glyphicon-log-in"></i>
         </div>
       <?php } ?>
       <div class="nmg-menu-btn">
         <a href="#/about/contact">
-          <h5 class="center nmg-menu-btn-title">Contact</h5>
-          <i class="nmg-menu-btn-icon glyphicon glyphicon-envelope"></i>
+          <h5 class="center {{nmgThemeTextClass}} nmg-menu-btn-title">Contact</h5>
+          <i class="{{nmgThemeTextClass}} nmg-menu-btn-icon glyphicon glyphicon-envelope"></i>
         </a>
       </div>
       <div class="nmg-menu-btn" ng-click="menuButtonClick($event)">
-        <h5 class="center nmg-menu-btn-title">Menu</h5>
-        <i class="nmg-menu-btn-icon glyphicon glyphicon-leaf"></i>
+        <h5 class="center {{nmgThemeTextClass}} nmg-menu-btn-title">Menu</h5>
+        <i class="{{nmgThemeTextClass}} nmg-menu-btn-icon glyphicon glyphicon-leaf"></i>
       </div>
       <a href="#/" class="nmg-bike-logo">
         <img src="assets/img/global/bike_transparent_color_vector_203x90.png">
-        <div class="nmg-font">Where Education is a journey</div>
+        <div class="{{nmgThemeTextClass}} nmg-font">Where Education is a journey</div>
       </a>
       <h3>
-        <a href="#/"><div class="nmg-school-title"><?= $site_title ?></div></a>
+        <a href="#/"><div class="{{nmgThemeTextClass}} nmg-school-title"><?= $site_title ?></div></a>
       </h3>
     </div>
 
@@ -87,10 +87,10 @@
 
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="text-center nmg-landing-ad-box">
+          <div class="text-center {{nmgThemeTextClass}} nmg-landing-ad-box">
             <!-- FACEBOOK LINK -->
             <a href="https://www.facebook.com/pages/Njeris-Morning-Glory-School-and-Art-Center/347516388712926" target="_blank">
-              <h4>follow us on&nbsp;<img ng-src="assets/img/global/f_logo.png" class="nmg-facebook" alt="Njeri's Morning Glory School and Art Center on facebook"></h4>
+              <h4 class="{{nmgThemeTextClass}}">follow us on&nbsp;<img ng-src="assets/img/global/f_logo.png" class="nmg-facebook" alt="Njeri's Morning Glory School and Art Center on facebook"></h4>
             </a>
             <!--- FACEBOOK "Like" ICON -->
             <!-- https://developers.facebook.com/docs/plugins/like-button/ -->

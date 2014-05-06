@@ -14,7 +14,7 @@ programsModule.directive('programsDirective', function() {
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$location', '$element', 'GlobalData', function($scope, $location, $element, GlobalData) {
+        controller: ['$scope', '$rootScope', '$location', '$element', 'GlobalData', function($scope, $rootScope, $location, $element, GlobalData) {
             $scope.gData = GlobalData;
             $scope.openPage = function(path) {
                 document.location = path;
@@ -41,6 +41,9 @@ programsModule.directive('programsDirective', function() {
                     $scope.tab.isSkiActive = true;
                     break;
             }
+
+            // Change the header/footer area text style by the theme of the background.
+            $rootScope.nmgThemeTextClass = "nmg-theme-text-programs";
         }],
         transclude: true,
         templateUrl: 'app/programs/_template.html',

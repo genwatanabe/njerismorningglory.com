@@ -124,7 +124,6 @@ h1, h2, h3, h4, h5, .nmg-font {
   margin-top: 15px;
   margin-bottom: 25px;
   text-align: center;
-  color:$theme-text-color;
 }
 .nmg-bike-logo {
   float:left;
@@ -135,7 +134,6 @@ h1, h2, h3, h4, h5, .nmg-font {
   clear:both;
   display:block;
   font-size:24px;
-  color:$theme-text-color;
   margin-top:10px;
   padding-top:25px;
 }
@@ -168,13 +166,39 @@ h1, h2, h3, h4, h5, .nmg-font {
 }
 
 /* ==========================================================================
+    THEME TEXT COLOR
+   ========================================================================== */
+.nmg-theme-text-default {
+  color:$theme-text-color;
+}
+
+.nmg-theme-text-about {
+  color:blue;
+}
+
+.nmg-theme-text-community {
+  color:$theme-text-color;
+}
+
+.nmg-theme-text-curriculum {
+  color:orange;
+}
+
+.nmg-theme-text-parents {
+  color:blue;
+}
+
+.nmg-theme-text-programs {
+  color:$theme-text-color;
+}
+
+/* ==========================================================================
     MENU BUTTON
    ========================================================================== */
 .nmg-menu-btn {
   float:right;
   padding:9px;
   height:59px;
-  color:$theme-text-color;
   right:0px;
   margin-top:0px;
   margin-right:0px;

@@ -13,8 +13,11 @@ parentsModule.directive('parentsDirective', function() {
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$element', 'GlobalData', function($scope, $element, GlobalData) {
+        controller: ['$scope', '$rootScope', '$element', 'GlobalData', function($scope, $rootScope, $element, GlobalData) {
             $scope.gData = GlobalData;
+
+            // Change the header/footer area text style by the theme of the background.
+            $rootScope.nmgThemeTextClass = "nmg-theme-text-parents";
         }],
         transclude: true,
         templateUrl: 'app/parents/_template.html',

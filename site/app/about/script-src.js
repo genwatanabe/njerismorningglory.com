@@ -13,7 +13,7 @@ aboutModule.directive('aboutDirective', function() {
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$location', '$element', 'GlobalData', function($scope, $location, $element, GlobalData) {
+        controller: ['$scope', '$rootScope', '$location', '$element', 'GlobalData', function($scope, $rootScope, $location, $element, GlobalData) {
             $scope.gData = GlobalData;
             $scope.openPage = function(path) {
                 document.location = path;
@@ -44,6 +44,10 @@ aboutModule.directive('aboutDirective', function() {
                     $scope.tab.isWaldorfActive = true;
                     break;
             }
+
+            // Change the header/footer area text style by the theme of the background.
+            $rootScope.nmgThemeTextClass = "nmg-theme-text-about";
+            $scope.nmgAboutThemeTextClass = "nmg-theme-text-about";
         }],
         transclude: true,
         templateUrl: 'app/about/_template.html',
