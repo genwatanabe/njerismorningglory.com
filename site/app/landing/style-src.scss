@@ -10,8 +10,36 @@ body {
 .nmg-landing-carousel {
 	margin-top:20px;
 }
+.nmg-landing-circle-text {
+  margin:0 auto;
+  width:200px;
+  height:200px;
+}
+.nmg-landing-circle-text:after {
+    content: "";
+    display: block;
+    width:100%;
+    height:0;
+    padding-bottom: 100%;
+    background: rgba(255,255,255,0.7);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.nmg-landing-circle-text div {
+    float:left;
+    width:100%;
+    padding-top:30%;
+    padding-right:20px;
+    padding-left:20px;
+    line-height:1.5em;
+    text-align:center;
+    vertical-align:middle;
+    color:white;
+    font-size:21px;
+}
 
-.nmg-fade {
+.nmg-landing-fade {
   opacity: 0;
   -webkit-transition: opacity 0.5s ease-out;
   -moz-transition: opacity 0.5s ease-out;
@@ -19,7 +47,13 @@ body {
   -ms-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out;
 }
-.nmg-fade.in {
+.nmg-landing-fade.in {
   opacity: 1;
 }
 
+.nmg-landing-why {
+  color:blue;
+}
+.nmg-landing-art {
+  color:red;
+}
