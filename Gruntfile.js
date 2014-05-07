@@ -106,9 +106,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= img_src_dir %>',
+          cwd: '<%= img_src_dir %>/programs',
           src: '**/*.{gif,GIF,jpg,JPG,jpeg,JPEG,png,PNG}',
-          dest: '<%= img_dst_dir %>'
+          dest: '<%= img_dst_dir %>/programs'
         }]
       }
     },
@@ -128,7 +128,6 @@ module.exports = function(grunt) {
           '<%= build_dir %>/**/index-src.php',
           '<%= build_dir %>/**/script-src.js',
           '<%= build_dir %>/**/style-src.scss',
-          '<%= build_dir %>/favicon.gif',
           '<%= build_dir %>/favicon.ico',
           '<%= build_dir %>/assets',
           '<%= build_dir %>/common',
@@ -151,7 +150,6 @@ module.exports = function(grunt) {
           '<%= build_dir %>/**/style-src.scss',
           '<%= build_dir %>/**/**.html',
           '<%= build_dir %>/**/**.json',
-          '<%= build_dir %>/favicon.gif',
           '<%= build_dir %>/favicon.ico',
           '<%= build_dir %>/assets',
           '<%= build_dir %>/common',

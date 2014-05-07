@@ -1,3 +1,5 @@
+.DS_Store
+Thumbs.db
 .ftppass
 .sass-cache/
 node_modules/
