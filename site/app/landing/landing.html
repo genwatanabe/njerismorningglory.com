@@ -1,67 +1,47 @@
 <img src="assets/img/bg/rex-tulip.jpg" class="nmg-bg">
 
-<div class="row">
-	<div class="col-lg-12 col-md-12 col-sm-12">
-		<h1>{{model.message}}</h1>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-lg-4 col-md-4 col-sm-12">
-	    <div class="nmg-landing-ad-box">
-	        <p class="lead"><a ng-click="isNjeriConcept = !isNjeriConcept">Bringing Waldorf Education&nbsp;<wbr>to&nbsp;the&nbsp;South&nbsp;Bay</a></p>
-	        <div ng-show="isNjeriConcept" class="nmg-landing-ad-box nmg-bg-light-1">
+<div class="row" ng-controller="LandingCtrl">
+	<div class="col-lg-5 col-md-5 col-sm-12">
+	    <div class="nmg-landing-ad-box nmg-bg-light-1 nmg-fade" ng-class="{in:isNjeriConcept}">
+	        <h2>Bringing Waldorf Education&nbsp;<wbr>to&nbsp;the&nbsp;South&nbsp;Bay</h2>
+	        <div class="nmg-landing-ad-box">
 		        <p class="lead">Education is a journey on which one acquires knowledge.</p>
-		        <p>&nbsp;</p>
 				<p class="lead">It can be easy or difficult.</p>
-		        <p>&nbsp;</p>
 				<p class="lead">Each one of us has our own pace.</p>
-		        <p>&nbsp;</p>
 				<p class="lead">Some travel fast, some travel slowly, but once we acquire
 				this knowledge, it's like riding a bicycle...</p><p class="lead">we never forget.
-		        <p>&nbsp;</p>
 				<h4 class="clear nmg-font">Njeri McGillicuddy</h4></p>
 		        <p>&nbsp;</p>
 	        	<p><a class="btn btn-info" href="#/about/waldorf">Learn about Waldorf Education &raquo;</a></p>
 	        </div>
 	    </div>
 	</div>
-	<div class="col-lg-3 col-md-3 col-sm-12">
+	<div class="col-lg-1 col-md-1 col-sm-12">
 	</div>
-	<div class="col-lg-5 col-md-5 col-sm-12">
-		<div ng-controller="LandingCarouselCtrl">
-			<div class="nmg-landing-carousel">
-				<carousel interval="myInterval" disableAnimation="true">
-				  <slide ng-repeat="slide in slides" active="slide.active">
-				    <img ng-src="{{slide.image}}" style="margin:auto;">
-				    <div class="carousel-caption">
-				      <p class="lead">{{slide.text}}</p>
-				    </div>
-				  </slide>
-				</carousel>
-			</div>
+	<div class="col-lg-6 col-md-6 col-sm-12">
+		<div class="nmg-landing-carousel">
+			<carousel interval="myInterval" disableAnimation="true">
+			  <slide ng-repeat="slide in slides" active="slide.active">
+			    <img ng-src="{{slide.image}}" style="margin:auto;">
+			    <div class="carousel-caption">
+			      <p class="lead">{{slide.text}}</p>
+			    </div>
+			  </slide>
+			</carousel>
 		</div>
-	    <div class="nmg-landing-ad-box ">
-	        <p class="lead nmg-font">Summer Art Camp</p>
+	    <div class="nmg-landing-ad-box">
+	        <h2><a href="#/programs/summer-art-camp" class="{{nmgThemeTextClass}}">Summer Art Camp</a></h2>
 	        <p class="lead">June 2 (Mon) - August 29 (Fri)</p>
 	        <p><a class="btn btn-default" href="#/programs/summer-art-camp">Register now! &raquo;</a></p>
 	    </div>
-	    <div class="nmg-landing-ad-box ">
-	    	<p class="lead nmg-font">Hands On Art</p>
+	    <div class="nmg-landing-ad-box">
+	    	<h2><a href="#programs/hands-on-art" class="{{nmgThemeTextClass}}">Hands On Art</a></h2>
 	    	<p class="lead">March 26 (Wed) - May 16 (Fri)</p>
 	        <p><a class="btn btn-default" href="#/programs/hands-on-art">Register now! &raquo;</a></p>
 	    </div>
-	    <div class="nmg-landing-ad-box ">
-	    	<a href="#/programs/hands-on-art" class="lead">20 Reasons Why Art is Good for Kids</a>
+	    <div class="nmg-landing-ad-box">
+	    	<a href="#/programs/hands-on-art" class="lead {{nmgThemeTextClass}}"">20 Reasons Why Art is Good for Kids</a>
 	    </div>
 
-	</div>
-</div>
-
-
-<div class="row">
-	<div class="col-lg-9 col-md-9 col-sm-12">
-	</div>
-	<div class="col-lg-3 col-md-3 col-sm-12">
 	</div>
 </div>

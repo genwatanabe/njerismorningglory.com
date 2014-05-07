@@ -14,13 +14,9 @@
 .nav, .pagination, .carousel, .panel-title a {
     cursor: pointer;
 }
-a {
-  color:$theme-text-color;
-}
 a:hover {
   text-decoration: none;
   cursor:pointer;
-  color:lighten($theme-text-color,10%);
 }
 img {
   width:100%;
@@ -71,7 +67,7 @@ h1, h2, h3, h4, h5, .nmg-font {
   top:0px;
   left:0px;
 
-  min-width:1024px;
+  min-width:1920px;
   min-height:100%;
   width:100%;
   height:auto;
@@ -171,25 +167,43 @@ h1, h2, h3, h4, h5, .nmg-font {
 .nmg-theme-text-default {
   color:$theme-text-color;
 }
+.nmg-theme-text-default:hover {
+  color:lighten($theme-text-color,10%);
+}
 
 .nmg-theme-text-about {
   color:blue;
+}
+.nmg-theme-text-about:hover {
+  color:lighten(blue,10%);
 }
 
 .nmg-theme-text-community {
   color:$theme-text-color;
 }
+.nmg-theme-text-community:hover {
+  color:lighten($theme-text-color,10%);
+}
 
 .nmg-theme-text-curriculum {
   color:orange;
 }
+.nmg-theme-text-curriculum:hover {
+  color:lighten(orange,10%);
+}
 
 .nmg-theme-text-parents {
-  color:blue;
+  color:#ed4f60;
+}
+.nmg-theme-text-parents:hover {
+  color:lighten(#ed4f60,10%);
 }
 
 .nmg-theme-text-programs {
   color:$theme-text-color;
+}
+.nmg-theme-text-programs:hover {
+  color:lighten($theme-text-color,10%);
 }
 
 /* ==========================================================================

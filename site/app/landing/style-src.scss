@@ -11,11 +11,15 @@ body {
 	margin-top:20px;
 }
 
-.nmg-landing-bg-sunflower {
-	background:url(./assets/img/landing/sunflower.png) repeat;
-	color:$summer-text-color;
+.nmg-fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  -ms-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
 }
-.nmg-landing-bg-hoa-boat {
-	background:url(./assets/img/landing/hoa-boat.jpg) bottom;
-	color:$hoa-text-color;
+.nmg-fade.in {
+  opacity: 1;
 }
+
