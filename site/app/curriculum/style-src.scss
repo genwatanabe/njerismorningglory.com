@@ -6,3 +6,9 @@
 	float:right;
 	margin-left:10px;
 }
+.nmg-theme-text-curriculum {
+  color:$theme-text-color-curriculum;
+}
+.nmg-theme-text-curriculum > a {
+  color:$theme-text-color-curriculum;
+}

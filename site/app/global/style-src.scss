@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, .nmg-font {
 @media (min-width: 625px) {
   .nmg-school-title {
     display:block;
-    font-size:24px;
+    font-size:30px;
     padding-top:20px;
     padding-left:0px;
   }
@@ -171,39 +171,11 @@ h1, h2, h3, h4, h5, .nmg-font {
   color:lighten($theme-text-color,10%);
 }
 
-.nmg-theme-text-about {
-  color:blue;
-}
-.nmg-theme-text-about:hover {
-  color:lighten(blue,10%);
-}
-
-.nmg-theme-text-community {
-  color:$theme-text-color;
-}
-.nmg-theme-text-community:hover {
-  color:lighten($theme-text-color,10%);
-}
-
-.nmg-theme-text-curriculum {
-  color:orange;
-}
-.nmg-theme-text-curriculum:hover {
-  color:lighten(orange,10%);
-}
-
 .nmg-theme-text-parents {
   color:#ed4f60;
 }
 .nmg-theme-text-parents:hover {
   color:lighten(#ed4f60,10%);
-}
-
-.nmg-theme-text-programs {
-  color:$theme-text-color;
-}
-.nmg-theme-text-programs:hover {
-  color:lighten($theme-text-color,10%);
 }
 
 /* ==========================================================================

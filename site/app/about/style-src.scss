@@ -7,7 +7,7 @@
 }
 .nmg-teachers-name {
 	margin-top:0px;
-	color:#123456;
+	color:$theme-text-color-about;
 }
 .nmg-teachers-left {
 	float:left;
@@ -16,4 +16,10 @@
 .nmg-teachers-right {
 	float:right;
 	margin-left:10px;
+}
+.nmg-theme-text-about {
+  color:$theme-text-color-about;
+}
+.nmg-theme-text-about:hover {
+  color:lighten(#428bca,10%);
 }
