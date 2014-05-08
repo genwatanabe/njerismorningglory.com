@@ -10,7 +10,8 @@ var app = angular.module('app', [
   'app.curriculum',
   'app.parents',
   'app.programs',
-  'app.community'
+  'app.community',
+  'app.events'
 ]);
 
 // Routes configuration
@@ -131,6 +132,23 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     .when('/community/links', {
       templateUrl: 'app/community/links.html',
       controller: 'CommunityCtrl'
+    })
+
+    .when('/events/open-house', {
+      templateUrl: 'app/events/open-house.html',
+      controller: 'EventsCtrl'
+    })
+    .when('/events/spring-faire', {
+      templateUrl: 'app/events/spring-faire.html',
+      controller: 'EventsCtrl'
+    })
+    .when('/events/mfj', {
+      templateUrl: 'app/events/mfj.html',
+      controller: 'EventsCtrl'
+    })
+    .when('/events/amahl', {
+      templateUrl: 'app/events/amahl.html',
+      controller: 'EventsCtrl'
     })
 
   	.otherwise({

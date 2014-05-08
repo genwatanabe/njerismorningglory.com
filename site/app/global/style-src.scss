@@ -170,6 +170,12 @@ h1, h2, h3, h4, h5, .nmg-font {
 .nmg-theme-text-default:hover {
   color:lighten($theme-text-color,10%);
 }
+.nmg-theme-text-about {
+  color:$theme-text-color-about;
+}
+.nmg-theme-text-about > a {
+  color:lighten($theme-text-color-about,10%);
+}
 .nmg-theme-text-curriculum {
   color:$theme-text-color-curriculum;
 }
@@ -188,11 +194,16 @@ h1, h2, h3, h4, h5, .nmg-font {
 .nmg-theme-text-programs > a {
   color:$theme-text-color-programs;
 }
-
+.nmg-theme-text-events {
+  color:$theme-text-color-events;
+}
+.nmg-theme-text-events > a {
+  color:$theme-text-color-events;
+}
 .nmg-theme-text-parents {
   color:#ed4f60;
 }
-.nmg-theme-text-parents:hover {
+.nmg-theme-text-parents > a {
   color:lighten(#ed4f60,10%);
 }
 

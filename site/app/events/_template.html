@@ -1,0 +1,15 @@
+<div class="row">
+	<div class="container">
+		<h3 class="nmg-section-title">Events</h3>
+
+		<tabset class="nmg-font">
+			<tab class="nmg-theme-text-events" heading="Open House" ng-click="openPage('#/events/open-house')" active="tab.isOpenHouseActive"></tab>
+			<tab class="nmg-theme-text-events" heading="Spring Faire" ng-click="openPage('#/events/spring-faire')" active="tab.isSpringFaireActive"></tab>
+			<tab class="nmg-theme-text-events" heading="Magic Forest Journey" ng-click="openPage('#/events/mfj')" active="tab.isMFJActive"></tab>
+			<tab class="nmg-theme-text-events" heading="Amahl and the Night Visitors" ng-click="openPage('#/events/amahl')" active="tab.isAmahlActive"></tab>
+		</tabset>
+
+		<h2 class="nmg-theme-text-events nmg-page-title">{{title}}</h2>
+		<div ng-transclude>
+	</div>
+</div>
