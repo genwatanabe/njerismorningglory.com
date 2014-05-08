@@ -1,5 +1,4 @@
 var communityModule = angular.module('app.community', [
-  'ngResource',
   'ngRoute',
   'ui.bootstrap'
 ]);

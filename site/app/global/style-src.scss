@@ -170,6 +170,24 @@ h1, h2, h3, h4, h5, .nmg-font {
 .nmg-theme-text-default:hover {
   color:lighten($theme-text-color,10%);
 }
+.nmg-theme-text-curriculum {
+  color:$theme-text-color-curriculum;
+}
+.nmg-theme-text-curriculum > a {
+  color:$theme-text-color-curriculum;
+}
+.nmg-theme-text-community {
+  color:$theme-text-color-community !important;
+}
+.nmg-theme-text-community > a {
+  color:lighten($theme-text-color-community,10%);
+}
+.nmg-theme-text-programs {
+  color:$theme-text-color-programs;
+}
+.nmg-theme-text-programs > a {
+  color:$theme-text-color-programs;
+}
 
 .nmg-theme-text-parents {
   color:#ed4f60;
