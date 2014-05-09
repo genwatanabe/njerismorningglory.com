@@ -89,13 +89,7 @@
       <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="text-center {{nmgThemeTextClass}} nmg-landing-ad-box">
 
-            <!-- Razoo: Donation button (until May 6) -->
             <p><br></p>
-            <p class="lead">Our school is a Non-Profit Organization. Donations are greatly appreciated. Thank you!</p>
-            <a href="http://www.razoo.com/story/Njeri-S-Morning-Glory-School-And-Art-Center?referral_code=share" target="_blank"><img alt="Donate Now" border="0" src="assets/img/global/razoo_svgives_2014_05.png" style="width:241px;height:142px;"/></a>
-            <!-- Razoo's original code: <a href="http://www.razoo.com/story/Njeri-S-Morning-Glory-School-And-Art-Center?referral_code=share"><img alt="Donate Now" border="0" src="https://razoo-assets-prod.s3.amazonaws.com/public/assets/brands/1/donate_now.png" /></a>-->
-
-            <br><br>
 
             <!-- FACEBOOK LINK -->
             <a href="https://www.facebook.com/pages/Njeris-Morning-Glory-School-and-Art-Center/347516388712926" target="_blank">

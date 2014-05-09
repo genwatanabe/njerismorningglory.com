@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, .nmg-font {
 .nmg-theme-text-default {
   color:$theme-text-color;
 }
-.nmg-theme-text-default:hover {
+.nmg-theme-text-default > a {
   color:lighten($theme-text-color,10%);
 }
 .nmg-theme-text-about {
