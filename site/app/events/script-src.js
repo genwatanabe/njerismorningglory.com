@@ -42,8 +42,7 @@ eventsModule.directive('eventsDirective', function() {
             }
 
             // Change the header/footer area text style by the theme of the background.
-            $rootScope.nmgThemeTextClass = "nmg-theme-text-events";
-            $scope.nmgeventsThemeTextClass = "nmg-theme-text-events";
+            $rootScope.nmgThemeTextClass = "nmg-theme-text-default";
         }],
         transclude: true,
         templateUrl: 'app/events/_template.html',
