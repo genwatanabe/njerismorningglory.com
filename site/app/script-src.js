@@ -124,6 +124,10 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
       templateUrl: 'app/parents/calendar.html',
       controller: 'ParentsCtrl'
     })
+    .when('/parents/handbook', {
+      templateUrl: 'app/parents/handbook.html',
+      controller: 'ParentsCtrl'
+    })
 
     .when('/community/activities', {
       templateUrl: 'app/community/activities.html',

@@ -25,7 +25,7 @@
                 	<h4>Parents</h4>
                     <a href="#/parents/calendar">School Calendar</a>
                     <?php if (nmg_is_logged()) { ?>
-                        <a href="#">Parent Handbook</a>
+                        <a href="#/parents/handbook">Parent Handbook</a>
                     <?php } ?>
             </div>
             <div class="nmg-nav-col">
