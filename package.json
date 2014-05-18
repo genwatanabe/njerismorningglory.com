@@ -1,6 +1,6 @@
 {
   "name": "njerismorningglory.com",
-  "version": "0.1.479",
+  "version": "0.1.679",
   "description": "Web Site for Njeri's Morning Glory School and Art Center",
   "repository": "local",
   "author": "Gen Watanabe",
@@ -19,6 +19,7 @@
     "grunt-contrib-sass": "^0.7.3",
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-ftp-deploy": "^0.1.3"
+    "grunt-ftp-deploy": "^0.1.3",
+    "grunt-image-resize": "^0.3.0"
   }
 }

@@ -40,6 +40,10 @@
 
   <!-- MAIN APPLICATION -->
   <div class="container" ng-app="app" ng-controller="AppCtrl">
+    
+    <!-- BACKGROUND IMAGE -->
+    <img ng-src="{{backImgSrc}}" style="{{backImgStyle}}" class="nmg-bg" ng-show="isShowBg">
+
     <?php
       // LOGIN DIALOG
       include('app/global/login.php');

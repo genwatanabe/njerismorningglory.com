@@ -29,6 +29,6 @@ module.exports = {
     sass: ['site/app/style-src.scss']
   },
 
-  img_src_dir: 'site/assets/img-src',
-  img_dst_dir: 'site/assets/img'
+  img_src_dir: 'site/assets/img-minify-env/src',
+  img_dst_dir: 'site/assets/img-minify-env/dst'
 };

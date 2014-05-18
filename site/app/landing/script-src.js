@@ -8,15 +8,17 @@ landingModule.factory('LandingCarouselService', ['$resource', function($resource
   return $resource('app/landing/data/carousel-ad.json'+'?_=' + Math.random());
 }]);
 
-landingModule.controller('LandingCtrl', ['$scope', '$routeParams', 'GlobalData', 'LandingCarouselService', function($scope, $routeParams, GlobalData, LandingCarouselService) {
-  $scope.gData = GlobalData;
-  $scope.myInterval = 5000;
+landingModule.controller('LandingCtrl',
+  ['$scope', '$http', '$routeParams', 'AppService', 'LandingCarouselService',
+  function($scope, $http, $routeParams, AppService, LandingCarouselService) {
+  
+    // Load background image for the current screen size.
+    AppService.loadBackImg($http, 'app/landing/data/back-img.json');
 
-  setTimeout(function(){
-    $scope.isNjeriConcept = 1;
-  },100);
+    $scope.myInterval = 5000;
+    
+    LandingCarouselService.query(function(data){
+      $scope.slides = data;
+    });
 
-  LandingCarouselService.query(function(data){
-    $scope.slides = data;
-  });
 }]);

@@ -20,8 +20,7 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
 
   $routeProvider
     .when('/', {
-      templateUrl: 'app/landing/landing.html',
-      controller: 'LandingCtrl'
+      templateUrl: 'app/landing/landing.html'
 
       // run before templateUrl/controller run.
       /*
@@ -38,121 +37,93 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     })
     
     .when('/about', {
-      templateUrl: 'app/about/school.html',
-      controller: 'AboutCtrl',
+      templateUrl: 'app/about/school.html'
     })
     .when('/about/school', {
-      templateUrl: 'app/about/school.html',
-      controller: 'AboutCtrl',
+      templateUrl: 'app/about/school.html'
     })
     .when('/about/teachers', {
-      templateUrl: 'app/about/teachers.html',
-      controller: 'AboutCtrl'
+      templateUrl: 'app/about/teachers.html'
     })
     .when('/about/contact', {
-      templateUrl: 'app/about/contact.html',
-      controller: 'AboutCtrl'
+      templateUrl: 'app/about/contact.html'
     })
     .when('/about/tour', {
-      templateUrl: 'app/about/tour.html',
-      controller: 'AboutCtrl'
+      templateUrl: 'app/about/tour.html'
     })
     .when('/about/waldorf', {
-      templateUrl: 'app/about/waldorf.html',
-      controller: 'AboutCtrl'
+      templateUrl: 'app/about/waldorf.html'
     })
 
     .when('/curriculum', {
-      templateUrl: 'app/curriculum/overview.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/overview.html'
     })
     .when('/curriculum/overview', {
-      templateUrl: 'app/curriculum/overview.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/overview.html'
     })
     .when('/curriculum/art-programs', {
-      templateUrl: 'app/curriculum/art-programs.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/art-programs.html'
     })
     .when('/curriculum/kindergarten', {
-      templateUrl: 'app/curriculum/kindergarten.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/kindergarten.html'
     })
     .when('/curriculum/1st-grade', {
-      templateUrl: 'app/curriculum/1st-grade.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/1st-grade.html'
     })
     .when('/curriculum/2nd-grade', {
-      templateUrl: 'app/curriculum/2nd-grade.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/2nd-grade.html'
     })
     .when('/curriculum/3rd-grade', {
-      templateUrl: 'app/curriculum/3rd-grade.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/3rd-grade.html'
     })
     .when('/curriculum/4th-grade', {
-      templateUrl: 'app/curriculum/4th-grade.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/4th-grade.html'
     })
     .when('/curriculum/5th-grade', {
-      templateUrl: 'app/curriculum/5th-grade.html',
-      controller: 'CurriculumCtrl'
+      templateUrl: 'app/curriculum/5th-grade.html'
     })
 
     .when('/programs', {
-      templateUrl: 'app/programs/hands-on-art.html',
-      controller: 'ProgramsCtrl'
+      templateUrl: 'app/programs/hands-on-art.html'
     })
     .when('/programs/hands-on-art', {
-      templateUrl: 'app/programs/hands-on-art.html',
-      controller: 'ProgramsCtrl'
+      templateUrl: 'app/programs/hands-on-art.html'
     })
     .when('/programs/summer-art-camp', {
-      templateUrl: 'app/programs/summer-art-camp.html',
-      controller: 'ProgramsCtrl'
+      templateUrl: 'app/programs/summer-art-camp.html'
     })
     .when('/programs/spring-art-camp', {
-      templateUrl: 'app/programs/spring-art-camp.html',
-      controller: 'ProgramsCtrl'
+      templateUrl: 'app/programs/spring-art-camp.html'
     })
     .when('/programs/ski-week-art-camp', {
-      templateUrl: 'app/programs/ski-week-art-camp.html',
-      controller: 'ProgramsCtrl'
+      templateUrl: 'app/programs/ski-week-art-camp.html'
     })
 
     .when('/parents/calendar', {
-      templateUrl: 'app/parents/calendar.html',
-      controller: 'ParentsCtrl'
+      templateUrl: 'app/parents/calendar.html'
     })
     .when('/parents/handbook', {
-      templateUrl: 'app/parents/handbook.html',
-      controller: 'ParentsCtrl'
+      templateUrl: 'app/parents/handbook.html'
     })
 
     .when('/community/activities', {
-      templateUrl: 'app/community/activities.html',
-      controller: 'CommunityCtrl'
+      templateUrl: 'app/community/activities.html'
     })
     .when('/community/links', {
-      templateUrl: 'app/community/links.html',
-      controller: 'CommunityCtrl'
+      templateUrl: 'app/community/links.html'
     })
 
     .when('/events/open-house', {
-      templateUrl: 'app/events/open-house.html',
-      controller: 'EventsCtrl'
+      templateUrl: 'app/events/open-house.html'
     })
     .when('/events/spring-faire', {
-      templateUrl: 'app/events/spring-faire.html',
-      controller: 'EventsCtrl'
+      templateUrl: 'app/events/spring-faire.html'
     })
     .when('/events/mfj', {
-      templateUrl: 'app/events/mfj.html',
-      controller: 'EventsCtrl'
+      templateUrl: 'app/events/mfj.html'
     })
     .when('/events/amahl', {
-      templateUrl: 'app/events/amahl.html',
-      controller: 'EventsCtrl'
+      templateUrl: 'app/events/amahl.html'
     })
 
   	.otherwise({
@@ -178,7 +149,8 @@ app.run(function($rootScope, $templateCache, $log) {
 
 // AppCtrl is always called before template/controller starts.
 app.controller("AppCtrl", ['$scope', '$rootScope', '$route', '$location', '$http', function($scope, $rootScope, $route, $location, $http) {
-    
+  $rootScope.appScope = $scope;
+
   // This event fires BEFORE the routing starts.
   $rootScope.$on("$routeChangeStart", function(event, current, previous, resolve) {
       
@@ -220,20 +192,91 @@ app.controller("AppCtrl", ['$scope', '$rootScope', '$route', '$location', '$http
 
 }]);
 
-// Defining the global variables.
-app.factory('GlobalData', function(){
-  return {
-    'defaultTheme': 'spring'
-  }
-});
+// Defining the global functions as a service.
 
-// Background image attribute directive.
-app.directive('backImg', function(){
-    return function(scope, element, attrs){
-        var url = attrs.backImg;
+app.factory('AppService', ['$rootScope', '$resource', function($rootScope, $resource) {
+  return {
+
+    'loadBackImg': function(myHttp, myJsonFile) {
+      
+      var appScope = $rootScope.appScope;
+
+      // Load the background image for various screen sizes on cache first and then display.
+      var w = window,
+          mm = w.matchMedia,
+          parent = w.location.href.replace('#/',''),
+          imgSrc = "",
+          imgType = "",
+          imgStyle = "";
+
+      $resource(myJsonFile+'?_=' + Math.random()).query(function(data) {
+        var len = data.length,
+            i = 0,
+            dObj;
+
+        if (len == 0) {
+          console.debug('ERROR: failed to load back-mg.json file data.');
+          return;
+        }
+
+        // First data is the default one.
+        dObj = data[i];
+        imgSrc = dObj.img;
+        imgType = dObj.type;
+        imgStyle = dObj.css;
+
+        // From second index, if the media queries match, apply their image and style.
+        if ((len > 1) && mm) {
+          for(i=1;i<len;i++) {
+            dObj = data[i];
+            if (mm(dObj.media).matches) {
+              imgSrc = dObj.img;
+              imgType = dObj.type;
+              imgStyle = dObj.css;
+              break;
+            }
+          }
+        }
+
+        if (appScope.isShowBg === undefined) {
+          myHttp.get(imgSrc, {headers: {'Content-Type': imgType}})
+            .success(function(data, status, headers, config) {
+              appScope.isShowBg = 1;
+          });
+          appScope.backImgSrc = imgSrc;
+          appScope.backImgStyle = imgStyle;
+        }
+
+      }); // query
+
+    } // loadBackImg
+
+  }
+}]);
+
+
+
+
+
+
+
+// DELETE THIS NOW. - Background image attribute directive.
+
+// Then, use new appService function to load background.
+
+
+
+
+
+app.directive('backImg', function() {
+    return function(scope, element, attrs) {
+/*
+        console.log('I am app backImg directive.');
+        console.log('scope.gData.backImgSrc = ',scope.gData.backImgSrc);
         element.css({
-            'background-image': 'url(' + url +')',
-            'background-size' : 'cover'
+            'background': 'url('+scope.gData.backImgSrc+')',
+            'background-size': 'cover'
         });
+*/
     };
 });

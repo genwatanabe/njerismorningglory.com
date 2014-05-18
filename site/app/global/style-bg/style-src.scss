@@ -1,0 +1,41 @@
+/* ==========================================================================
+    NMG BACKGROUND
+   ========================================================================== */
+.nmg-bg {
+  position:fixed;
+  background-repeat: no-repeat;
+
+  top:0px;
+  left:0px;
+
+  min-height:100%;
+  height:auto;
+  z-index:-1;
+}
+
+.nmg-bg-njeri-salt {
+  background:url(./assets/img/bg/njeri_drawing_salt.png) no-repeat center center fixed;
+}
+.nmg-bg-2 {
+  background:url(./assets/img/bg/autumn_pyon.png) no-repeat center center fixed;
+}
+.nmg-bg-3 {
+  background:url(./assets/img/bg/children_dancing.jpg) no-repeat;
+  background:url(./assets/img/bg/scarecrow.jpg) no-repeat;
+}
+.nmg-bg-1 {
+  background:url(./assets/img/bg/classroom.jpg) no-repeat;
+}
+.nmg-bg-4 {
+  background:url(./assets/img/bg/autumn_pyon.png) no-repeat;
+}
+.nmg-bg-dark-1 {
+  background-color:rgba(0,0,0,0.5);
+}
+.nmg-bg-light-1 {
+  background-color:rgba(255,255,255,0.7);
+}
+.nmg-bg-light-2 {
+  background-color:rgba(255,255,255,0.5);
+}
+

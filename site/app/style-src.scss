@@ -23,6 +23,7 @@ $theme-text-color-events: $summer-text-color;
 $hoa-text-color: rgb(244,238,126);
 
 @import "global/style-src.scss";
+@import "global/style-bg/style-src.scss";
 @import "about/style-src.scss";
 @import "curriculum/style-src.scss";
 @import "landing/style-src.scss";

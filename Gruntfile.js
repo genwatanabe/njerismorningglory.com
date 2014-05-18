@@ -10,6 +10,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-ftp-deploy');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-image-resize');
+
 
   /**
    * Load in our user/task configuration files.
@@ -106,10 +108,22 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= img_src_dir %>/parents',
+          cwd: '<%= img_src_dir %>',
           src: '**/*.{gif,GIF,jpg,JPG,jpeg,JPEG,png,PNG}',
-          dest: '<%= img_dst_dir %>/parents'
+          dest: '<%= img_dst_dir %>'
         }]
+      }
+    },
+
+    image_resize: {
+      resize: {
+        options: {
+          width: 750,
+          overwrite: true
+        },
+        files: {
+          '<%= img_dst_dir %>/bg': '<%= img_src_dir %>/bg'
+        }
       }
     },
 

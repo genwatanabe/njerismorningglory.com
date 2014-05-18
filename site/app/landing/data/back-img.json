@@ -1,0 +1,20 @@
+[
+	{
+		"media": "default",
+		"type": "image/jpeg",
+		"img": "assets/img/bg/rex-tulip-1920x1277.jpg",
+		"css": "min-width:1920px; width:100%; background-size:cover;"
+	},
+	{
+		"media": "(max-width: 960px)",
+		"type": "image/jpeg",
+		"img": "assets/img/bg/rex-tulip-960x638.jpg",
+		"css": "min-width:960px; width:auto; background-size:cover;"
+	},
+	{
+		"media": "(max-width: 1440px)",
+		"type": "image/jpeg",
+		"img": "assets/img/bg/rex-tulip-1440x957.jpg",
+		"css": "min-width:1440px; width:auto; background-size:cover;"
+	}
+]
