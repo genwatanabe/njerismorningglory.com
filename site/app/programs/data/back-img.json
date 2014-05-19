@@ -1,0 +1,20 @@
+[
+	{
+		"media": "default",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-spring-1920x1277.png",
+		"css": "min-width:1920px; width:100%; background-size:cover;"
+	},
+	{
+		"media": "(max-width: 960px)",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-spring-960x639.png",
+		"css": "min-width:960px; width:auto; background-size:cover;"
+	},
+	{
+		"media": "(max-width: 1440px)",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-spring-1440x958.png",
+		"css": "min-width:1440px; width:auto; background-size:cover;"
+	}
+]

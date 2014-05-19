@@ -14,8 +14,11 @@ programsModule.directive('programsDirective', function() {
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$rootScope', '$location', '$element', 'GlobalData', function($scope, $rootScope, $location, $element, GlobalData) {
-            $scope.gData = GlobalData;
+        controller: ['$scope', '$rootScope', '$location', '$http', 'AppService', function($scope, $rootScope, $location, $http, AppService) {
+
+            // Load background image for the current screen size.
+            AppService.loadBackImg($http, 'app/programs/data/back-img.json');
+
             $scope.openPage = function(path) {
                 document.location = path;
             };

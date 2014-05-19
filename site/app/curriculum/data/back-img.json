@@ -1,0 +1,20 @@
+[
+	{
+		"media": "default",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-autumn-a-1886x1303.png",
+		"css": "min-width:1920px; width:100%; background-size:cover;"
+	},
+	{
+		"media": "(max-width: 960px)",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-autumn-a-960x663.png",
+		"css": "min-width:960px; width:auto; background-size:cover;"
+	},
+	{
+		"media": "(max-width: 1440px)",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-autumn-a-1440x995.png",
+		"css": "min-width:1440px; width:auto; background-size:cover;"
+	}
+]

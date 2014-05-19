@@ -253,30 +253,3 @@ app.factory('AppService', ['$rootScope', '$resource', function($rootScope, $reso
 
   }
 }]);
-
-
-
-
-
-
-
-// DELETE THIS NOW. - Background image attribute directive.
-
-// Then, use new appService function to load background.
-
-
-
-
-
-app.directive('backImg', function() {
-    return function(scope, element, attrs) {
-/*
-        console.log('I am app backImg directive.');
-        console.log('scope.gData.backImgSrc = ',scope.gData.backImgSrc);
-        element.css({
-            'background': 'url('+scope.gData.backImgSrc+')',
-            'background-size': 'cover'
-        });
-*/
-    };
-});

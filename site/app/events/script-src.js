@@ -3,18 +3,17 @@ var eventsModule = angular.module('app.events', [
   'ui.bootstrap'
 ]);
 
-eventsModule.controller('EventsCtrl', ['$scope', '$routeParams', 'GlobalData', function($scope, $routeParams, GlobalData) {
-	$scope.gData = GlobalData;
-}]);
-
 eventsModule.directive('eventsDirective', function() {
     return {
         restrict: "E",
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$rootScope', '$location', '$element', 'GlobalData', function($scope, $rootScope, $location, $element, GlobalData) {
-            $scope.gData = GlobalData;
+        controller: ['$scope', '$rootScope', '$location', '$http', 'AppService', function($scope, $rootScope, $location, $http, AppService) {
+
+            // Load background image for the current screen size.
+            AppService.loadBackImg($http, 'app/programs/data/back-img.json');
+
             $scope.openPage = function(path) {
                 document.location = path;
             };

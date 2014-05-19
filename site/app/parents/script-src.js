@@ -13,8 +13,10 @@ parentsModule.directive('parentsDirective', function() {
         scope: {
             title: "@"
         },
-        controller: ['$scope', '$rootScope', '$element', 'GlobalData', function($scope, $rootScope, $element, GlobalData) {
-            $scope.gData = GlobalData;
+        controller: ['$scope', '$rootScope', '$http', 'AppService', function($scope, $rootScope, $http, AppService) {
+
+            // Load background image for the current screen size.
+            AppService.loadBackImg($http, 'app/about/data/back-img.json');
 
             // Change the header/footer area text style by the theme of the background.
             $rootScope.nmgThemeTextClass = "nmg-theme-text-parents";
