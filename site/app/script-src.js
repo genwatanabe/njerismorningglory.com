@@ -238,14 +238,14 @@ app.factory('AppService', ['$rootScope', '$resource', function($rootScope, $reso
           }
         }
 
-        if (appScope.isShowBg === undefined) {
+        //if (appScope.isShowBg === undefined) {
           myHttp.get(imgSrc, {headers: {'Content-Type': imgType}})
             .success(function(data, status, headers, config) {
               appScope.isShowBg = 1;
           });
           appScope.backImgSrc = imgSrc;
           appScope.backImgStyle = imgStyle;
-        }
+        //}
 
       }); // query
 
