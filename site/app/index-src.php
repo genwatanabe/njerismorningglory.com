@@ -1,14 +1,13 @@
-<?php session_start(); ?>
+<?php
+  session_start();
+  include('app/global/vars.php');
+  include('app/global/db.php');
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-
-<?php
-  include('app/global/vars.php');
-  include('app/global/db.php');
-?>
 
 <head>
     <meta charset="utf-8">
