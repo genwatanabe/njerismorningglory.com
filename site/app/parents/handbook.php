@@ -1,8 +1,14 @@
+<?php session_start(); ?>
 <parents-directive title="Parent Handbook">
-
+<?php if (!isset($_SESSION['logged'])) { ?>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="nmg-bg-light-1">
+        <p class="lead">You are not authorized to view this page's contents. Please sign in by clicking "Sign In" icon at the top of this page.</p>
+      </div>
+    </div>
+<?php } else { ?>
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="nmg-bg-light-1">
-
         	<table class="table table-bordered table-hover">
 	        	<thead>
 	                <tr class="active">
@@ -51,5 +57,5 @@
 
         </div>
     </div>
-
+<?php } ?>
 </parents-directive>

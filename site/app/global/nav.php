@@ -1,3 +1,13 @@
+<?php if (nmg_is_logged()) { ?>
+<div class="row nmg-nav">
+    <div class="container">
+        <div class="row">
+            <h4>School Member Only Menu</h4>
+            <p class="lead"><a href="#/parents/handbook">Parent Handbook</a></p>
+        </div>
+    </div>
+</div>
+<?php } ?>
 <div class="row nmg-nav nmg-toggle" ng-if="isMenuVisible">
     <div class="container">
         <div class="row">

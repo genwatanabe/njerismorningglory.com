@@ -103,7 +103,7 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
       templateUrl: 'app/parents/calendar.html'
     })
     .when('/parents/handbook', {
-      templateUrl: 'app/parents/handbook.html'
+      templateUrl: 'app/parents/handbook.php'
     })
 
     .when('/community/activities', {

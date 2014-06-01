@@ -21,7 +21,9 @@
 
 	if (isset($_GET['logout'])) {
 		session_unset();
-		header('refresh:0;');
+		unset($_GET['logout']);
+		//header('refresh:0;');
+		header("Location: index.php");
 	}
 	
 	// If the login credentials are submitted, verify the user/passwd and set $_SESSION['logged'].
