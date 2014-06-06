@@ -1,9 +1,10 @@
 <?php
+	$isLoginFailed = 0;
 
 	// Is the user currently logged in? 1 if true, 0 otherwise.
 	function nmg_is_logged(){
 		if (isset($_SESSION['logged'])) {
-		    return 1;
+		  return 1;
 		}else{
 			return 0;
 		}
@@ -43,10 +44,12 @@
 			$_SESSION['firstName'] = $row['First_Name'];
 			$_SESSION['lastName'] = $row['Last_Name'];
 			$_SESSION['logged'] = TRUE;
+			$isLoginFailed = 0;
 		} else {
 			unset($_SESSION['firstName']);
 			unset($_SESSION['lastName']);
 			unset($_SESSION['logged']);
+			$isLoginFailed = 1;
 		}
 	}
 
