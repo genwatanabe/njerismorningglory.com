@@ -11,13 +11,15 @@ $background-light-1: rgba(255,255,255,0.7);
 /* text color for summer theme.  */
 $summer-text-color: rgb(107,9,0);
 $tulip-text-color: rgb(32,53,24);
+$poppy-text-color: rgb(236,135,160);
 
 $theme-text-color: $tulip-text-color;
-$theme-text-color-about: #428bca;
+$theme-text-color-about: $poppy-text-color;
 $theme-text-color-curriculum: #f28c45;
 $theme-text-color-programs: $summer-text-color;
 $theme-text-color-community: $summer-text-color;
 $theme-text-color-events: $summer-text-color;
+$theme-text-color-parents: $poppy-text-color;
 
 /* text color for Hands On Art.  */
 $hoa-text-color: rgb(244,238,126);

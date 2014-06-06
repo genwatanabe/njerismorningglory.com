@@ -144,10 +144,10 @@ h1, h2, h3, h4, h5, .nmg-font {
   color:$theme-text-color-events;
 }
 .nmg-theme-text-parents {
-  color:#ed4f60;
+  color:$theme-text-color-parents;
 }
 .nmg-theme-text-parents > a {
-  color:lighten(#ed4f60,10%);
+  color:lighten($theme-text-color-parents,10%);
 }
 
 /* ==========================================================================
