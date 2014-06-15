@@ -145,7 +145,8 @@ module.exports = function(grunt) {
           '<%= build_dir %>/favicon.ico',
           '<%= build_dir %>/assets',
           '<%= build_dir %>/common',
-          '<%= build_dir %>/template'
+          '<%= build_dir %>/template',
+          '<%= build_dir %>/sftp-config.json'
         ]
       },
       php: {

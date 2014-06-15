@@ -1,7 +1,8 @@
 <?php
   session_start();
-  include('app/global/vars.php');
-  include('app/global/db.php');
+  include_once('app/global/vars.php');
+  include_once('app/global/utils.php');
+  include_once('app/global/db.php');
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -15,7 +16,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <?php include('app/global/seo.php'); ?>
+    <?php
+      if (!is_debug()) {
+        include('app/global/seo.php');
+      }
+    ?>
+      
 
     <title><?= $site_title; ?></title>
 
@@ -27,6 +33,11 @@
 </head>
 
 <body>
+  <?php
+    if (!is_debug()) {
+      include_once("app/global/analytics.php");
+    }
+  ?>
   <!-- FACEBOOK INITIALIZATION -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {

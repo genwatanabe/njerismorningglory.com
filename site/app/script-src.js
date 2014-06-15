@@ -90,7 +90,7 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
       templateUrl: 'app/programs/hands-on-art.html'
     })
     .when('/programs/summer-art-camp', {
-      templateUrl: 'app/programs/summer-art-camp.html'
+      templateUrl: 'app/programs/summer-art-camp.html?_='+Math.random()
     })
     .when('/programs/spring-art-camp', {
       templateUrl: 'app/programs/spring-art-camp.html'

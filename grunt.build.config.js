@@ -8,7 +8,7 @@ module.exports = {
    */
   build_dir: 'site',
 
-  ftp_dir: 'njerismorningglory.com/_debug',
+  ftp_dir: 'njerismorningglory.com',
   ftp_host: 'njerismorningglory.com',
   ftp_port: '21',
 
