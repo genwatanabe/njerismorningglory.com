@@ -37,96 +37,96 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     })
     
     .when('/login', {
-      templateUrl: 'app/landing/landing.html'
+      templateUrl: 'app/landing/landing.html?_='+Math.random()
     })
     .when('/about', {
-      templateUrl: 'app/about/school.html'
+      templateUrl: 'app/about/school.html?_='+Math.random()
     })
     .when('/about/school', {
-      templateUrl: 'app/about/school.html'
+      templateUrl: 'app/about/school.html?_='+Math.random()
     })
     .when('/about/teachers', {
-      templateUrl: 'app/about/teachers.html'
+      templateUrl: 'app/about/teachers.html?_='+Math.random()
     })
     .when('/about/contact', {
-      templateUrl: 'app/about/contact.html'
+      templateUrl: 'app/about/contact.html?_='+Math.random()
     })
     .when('/about/tour', {
-      templateUrl: 'app/about/tour.html'
+      templateUrl: 'app/about/tour.html?_='+Math.random()
     })
     .when('/about/waldorf', {
-      templateUrl: 'app/about/waldorf.html'
+      templateUrl: 'app/about/waldorf.html?_='+Math.random()
     })
 
     .when('/curriculum', {
-      templateUrl: 'app/curriculum/overview.html'
+      templateUrl: 'app/curriculum/overview.html?_='+Math.random()
     })
     .when('/curriculum/overview', {
-      templateUrl: 'app/curriculum/overview.html'
+      templateUrl: 'app/curriculum/overview.html?_='+Math.random()
     })
     .when('/curriculum/art-programs', {
-      templateUrl: 'app/curriculum/art-programs.html'
+      templateUrl: 'app/curriculum/art-programs.html?_='+Math.random()
     })
     .when('/curriculum/kindergarten', {
-      templateUrl: 'app/curriculum/kindergarten.html'
+      templateUrl: 'app/curriculum/kindergarten.html?_='+Math.random()
     })
     .when('/curriculum/1st-grade', {
-      templateUrl: 'app/curriculum/1st-grade.html'
+      templateUrl: 'app/curriculum/1st-grade.html?_='+Math.random()
     })
     .when('/curriculum/2nd-grade', {
-      templateUrl: 'app/curriculum/2nd-grade.html'
+      templateUrl: 'app/curriculum/2nd-grade.html?_='+Math.random()
     })
     .when('/curriculum/3rd-grade', {
-      templateUrl: 'app/curriculum/3rd-grade.html'
+      templateUrl: 'app/curriculum/3rd-grade.html?_='+Math.random()
     })
     .when('/curriculum/4th-grade', {
-      templateUrl: 'app/curriculum/4th-grade.html'
+      templateUrl: 'app/curriculum/4th-grade.html?_='+Math.random()
     })
     .when('/curriculum/5th-grade', {
-      templateUrl: 'app/curriculum/5th-grade.html'
+      templateUrl: 'app/curriculum/5th-grade.html?_='+Math.random()
     })
 
     .when('/programs', {
-      templateUrl: 'app/programs/hands-on-art.html'
+      templateUrl: 'app/programs/hands-on-art.html?_='+Math.random()
     })
     .when('/programs/hands-on-art', {
-      templateUrl: 'app/programs/hands-on-art.html'
+      templateUrl: 'app/programs/hands-on-art.html?_='+Math.random()
     })
     .when('/programs/summer-art-camp', {
       templateUrl: 'app/programs/summer-art-camp.html?_='+Math.random()
     })
     .when('/programs/spring-art-camp', {
-      templateUrl: 'app/programs/spring-art-camp.html'
+      templateUrl: 'app/programs/spring-art-camp.html?_='+Math.random()
     })
     .when('/programs/ski-week-art-camp', {
-      templateUrl: 'app/programs/ski-week-art-camp.html'
+      templateUrl: 'app/programs/ski-week-art-camp.html?_='+Math.random()
     })
 
     .when('/parents/calendar', {
-      templateUrl: 'app/parents/calendar.html'
+      templateUrl: 'app/parents/calendar.html?_='+Math.random()
     })
     .when('/parents/handbook', {
-      templateUrl: 'app/parents/handbook.php'
+      templateUrl: 'app/parents/handbook.php?_='+Math.random()
     })
 
     .when('/community/activities', {
-      templateUrl: 'app/community/activities.html'
+      templateUrl: 'app/community/activities.html?_='+Math.random()
     })
     .when('/community/links', {
-      templateUrl: 'app/community/links.html'
+      templateUrl: 'app/community/links.html?_='+Math.random()
     })
 
     .when('/events/open-house', {
-      templateUrl: 'app/events/open-house.html'
+      templateUrl: 'app/events/open-house.html?_='+Math.random()
     })
     .when('/events/spring-faire', {
-      templateUrl: 'app/events/spring-faire.html'
+      templateUrl: 'app/events/spring-faire.html?_='+Math.random()
     })
     .when('/events/mfj', {
-      templateUrl: 'app/events/mfj.html'
+      templateUrl: 'app/events/mfj.html?_='+Math.random()
     })
     .when('/events/amahl', {
-      templateUrl: 'app/events/amahl.html'
+      templateUrl: 'app/events/amahl.html?_='+Math.random()
     })
 
   	.otherwise({
