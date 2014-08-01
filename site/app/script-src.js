@@ -36,6 +36,9 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
       */
     })
     
+    .when('/login', {
+      templateUrl: 'app/landing/landing.html'
+    })
     .when('/about', {
       templateUrl: 'app/about/school.html'
     })
@@ -156,7 +159,6 @@ app.controller("AppCtrl", ['$scope', '$rootScope', '$route', '$location', '$http
       
       // Hide the navigation if it's visible.
       $scope.isMenuVisible  = false;
-
       //console.log("AppCtrl:$routeChangeStart", $scope, $rootScope, $route, $location);
   });
 
@@ -175,7 +177,12 @@ app.controller("AppCtrl", ['$scope', '$rootScope', '$route', '$location', '$http
 
   // Initialize menu visibility. Hide by default.
   $scope.isMenuVisible = false;
-  $scope.isLogInVisible = false;
+
+  if ($location.path() === '/login') {
+    $scope.isLogInVisible = true;
+  } else {
+    $scope.isLogInVisible = false;
+  }
 
   // Menu Button click handler
   $scope.menuButtonClick = function(event) {

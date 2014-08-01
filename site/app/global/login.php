@@ -1,5 +1,5 @@
 <div class="text-right nmg-login" ng-if="<?php echo $isLoginFailed; ?> || isLogInVisible">
-	<form class="form-inline" role="form" method="post" action="#/login">
+	<form class="form-inline" role="form" method="post" action="#/">
 		<?php if ($isLoginFailed) { ?>
 		  <div class="form-group">
 				<alert type="danger">Invalid Username and/or Password. Please enter again.</alert>

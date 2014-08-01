@@ -9,8 +9,8 @@ landingModule.factory('LandingCarouselService', ['$resource', function($resource
 }]);
 
 landingModule.controller('LandingCtrl',
-  ['$scope', '$http', '$routeParams', 'AppService', 'LandingCarouselService',
-  function($scope, $http, $routeParams, AppService, LandingCarouselService) {
+  ['$scope', '$http', '$routeParams', 'AppService', 'LandingCarouselService', '$rootScope', '$location',
+  function($scope, $http, $routeParams, AppService, LandingCarouselService, $rootScope, $location) {
   
     // Load background image for the current screen size.
     AppService.loadBackImg($http, 'app/landing/data/back-img.json');
@@ -21,4 +21,10 @@ landingModule.controller('LandingCtrl',
       $scope.slides = data;
     });
 
+  if ($location.path() === '/login') {
+    $rootScope.appScope.isLogInVisible = false; // will be toggled below
+  } else {
+    $rootScope.appScope.isLogInVisible = true; // will be toggled below
+  }
+    $rootScope.appScope.loginButtonClick(); // will be toggled here
 }]);

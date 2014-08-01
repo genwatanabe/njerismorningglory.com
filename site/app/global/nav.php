@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <h4>School Member Only Menu</h4>
-            <p class="lead"><a href="#/parents/handbook">Parent Handbook</a></p>
+            <p class="lead"><a href="#/parents/handbook">Handbook</a></p>
         </div>
     </div>
 </div>
@@ -32,11 +32,14 @@
                     <a href="#/curriculum/5th-grade">Fifth Grade</a>
             </div>
             <div class="nmg-nav-col">
-                	<h4>Parents</h4>
+                	<h4>Parent Resources</h4>
                     <a href="#/parents/calendar">School Calendar</a>
                     <?php if (nmg_is_logged()) { ?>
-                        <a href="#/parents/handbook">Parent Handbook</a>
+                        <a href="#/parents/handbook">Handbook</a>
+                    <?php } else { ?>
+                        <a href="#/login">Handbook&nbsp;<i class="glyphicon glyphicon-lock" title="You will be prompted to sign-in in order to view the handbook."></i></a>
                     <?php } ?>
+                    
             </div>
             <div class="nmg-nav-col">
                 	<h4>Programs</h4>
