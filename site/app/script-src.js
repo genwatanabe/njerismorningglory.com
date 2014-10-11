@@ -125,6 +125,9 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     .when('/events/mfj', {
       templateUrl: 'app/events/mfj.html?_='+Math.random()
     })
+    .when('/events/mae', {
+      templateUrl: 'app/events/mae.html?_='+Math.random()
+    })
     .when('/events/amahl', {
       templateUrl: 'app/events/amahl.html?_='+Math.random()
     })

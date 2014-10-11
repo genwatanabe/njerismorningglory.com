@@ -22,7 +22,8 @@ eventsModule.directive('eventsDirective', function() {
             $scope.tab.isOpenHouseActive   = false;
             $scope.tab.isSpringFaireActive = false;
             $scope.tab.isMFJActive         = false;
-            $scope.tab.isAmahlActive      = false;
+            $scope.tab.isMAEActive         = false;
+            $scope.tab.isAmahlActive       = false;
 
             // Set the default active tab based on the url path.
             switch ($location.path()) {
@@ -35,6 +36,9 @@ eventsModule.directive('eventsDirective', function() {
                 case '/events/mfj':
                     $scope.tab.isMFJActive = true;
                     break;
+                case '/events/mae':
+                    $scope.tab.isMAEActive = true;
+                    break;
                 case '/events/amahl':
                     $scope.tab.isAmahlActive = true;
                     break;
@@ -44,7 +48,7 @@ eventsModule.directive('eventsDirective', function() {
             $rootScope.nmgThemeTextClass = "nmg-theme-text-default";
         }],
         transclude: true,
-        templateUrl: 'app/events/_template.html',
+        templateUrl: 'app/events/_template.html?_=' + Math.random(),
         replace:true
     }
 });

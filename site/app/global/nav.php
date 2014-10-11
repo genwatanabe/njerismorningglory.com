@@ -52,7 +52,8 @@
                 	<h4>Events</h4>
                     <a href="#/events/open-house">Open House</a>
                     <a href="#/events/spring-faire">Spring Faire</a>
-                    <a href="#/events/mfj">Magic Forest Journey</a>
+                    <!-- <a href="#/events/mfj">Magic Forest Journey</a> -->
+                    <a href="#/events/mae">Magical Autumn Evening</a>
                     <a href="#/events/amahl">Amahl and the Night Visitors</a>
             </div>
             <div class="nmg-nav-col">
