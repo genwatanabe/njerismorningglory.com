@@ -23,8 +23,10 @@
                 	<h4>Curriculum</h4>
                     <a href="#/curriculum/overview">Overview</a>
                     <a href="#/curriculum/art-programs">Art Programs</a>
+                    <h5>Early Childhood</h5>
+                    Preschool (description coming soon)
                     <a href="#/curriculum/kindergarten">Kindergarten</a>
-                	<h5>Grades</h5>
+                    <h5>Grades</h5>
                     <a href="#/curriculum/1st-grade">First Grade</a>
                     <a href="#/curriculum/2nd-grade">Second Grade</a>
                     <a href="#/curriculum/3rd-grade">Third Grade</a>
