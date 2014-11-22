@@ -2,19 +2,19 @@
 	{
 		"media": "default",
 		"type": "image/png",
-		"img": "assets/img/bg/pyon-spring-1920x1277.png",
+		"img": "assets/img/bg/pyon-poppy-1920x1406.png",
 		"css": "min-width:1920px; width:100%; background-size:cover;"
 	},
 	{
 		"media": "(max-width: 960px)",
 		"type": "image/png",
-		"img": "assets/img/bg/pyon-spring-960x639.png",
+		"img": "assets/img/bg/pyon-poppy-960x717.png",
 		"css": "min-width:960px; width:auto; background-size:cover;"
 	},
 	{
 		"media": "(max-width: 1440px)",
 		"type": "image/png",
-		"img": "assets/img/bg/pyon-spring-1440x958.png",
+		"img": "assets/img/bg/pyon-poppy-1440x1076.png",
 		"css": "min-width:1440px; width:auto; background-size:cover;"
 	}
 ]

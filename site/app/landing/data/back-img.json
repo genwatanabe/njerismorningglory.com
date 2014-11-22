@@ -1,20 +1,20 @@
 [
 	{
 		"media": "default",
-		"type": "image/jpeg",
-		"img": "assets/img/bg/rex-tulip-1920x1277.jpg",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-poppy-1920x1406.png",
 		"css": "min-width:1920px; width:100%; background-size:cover;"
 	},
 	{
 		"media": "(max-width: 960px)",
-		"type": "image/jpeg",
-		"img": "assets/img/bg/rex-tulip-960x638.jpg",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-poppy-960x717.png",
 		"css": "min-width:960px; width:auto; background-size:cover;"
 	},
 	{
 		"media": "(max-width: 1440px)",
-		"type": "image/jpeg",
-		"img": "assets/img/bg/rex-tulip-1440x957.jpg",
+		"type": "image/png",
+		"img": "assets/img/bg/pyon-poppy-1440x1076.png",
 		"css": "min-width:1440px; width:auto; background-size:cover;"
 	}
 ]
