@@ -67,6 +67,9 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     .when('/curriculum/art-programs', {
       templateUrl: 'app/curriculum/art-programs.html?_='+Math.random()
     })
+    .when('/curriculum/preschool', {
+      templateUrl: 'app/curriculum/preschool.html?_='+Math.random()
+    })
     .when('/curriculum/kindergarten', {
       templateUrl: 'app/curriculum/kindergarten.html?_='+Math.random()
     })

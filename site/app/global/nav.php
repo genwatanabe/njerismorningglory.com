@@ -25,6 +25,7 @@
                     <a href="#/curriculum/art-programs">Art Programs</a>
                     <h5>Early Childhood</h5>
                     Preschool (description coming soon)
+                    <!--<a href="#/curriculum/preschool">Preschool</a>-->
                     <a href="#/curriculum/kindergarten">Kindergarten</a>
                     <h5>Grades</h5>
                     <a href="#/curriculum/1st-grade">First Grade</a>
