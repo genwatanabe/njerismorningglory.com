@@ -108,46 +108,46 @@ h1, h2, h3, h4, h5, .nmg-font {
     THEME TEXT COLOR
    ========================================================================== */
 .nmg-theme-text-default {
-  color:$theme-text-color;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-default > a {
-  color:lighten($theme-text-color,10%);
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-about {
-  color:$theme-text-color-about;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-about > a {
-  color:lighten($theme-text-color-about,10%);
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-curriculum {
-  color:$theme-text-color-curriculum;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-curriculum > a {
-  color:$theme-text-color-curriculum;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-community {
-  color:$theme-text-color-community !important;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-community > a {
-  color:lighten($theme-text-color-community,10%);
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-programs {
-  color:$theme-text-color-programs;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-programs > a {
-  color:$theme-text-color-programs;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-events {
-  color:$theme-text-color-events;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-events > a {
-  color:$theme-text-color-events;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-parents {
-  color:$theme-text-color-parents;
+  color:$theme-text-color-poppy;
 }
 .nmg-theme-text-parents > a {
-  color:lighten($theme-text-color-parents,10%);
+  color:$theme-text-color-poppy;
 }
 
 /* ==========================================================================
