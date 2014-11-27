@@ -14,7 +14,11 @@
 .nav, .pagination, .carousel, .panel-title a {
     cursor: pointer;
 }
+a {
+  color:$theme-text-color-poppy;
+}
 a:hover {
+  color: darken($theme-text-color-poppy,10%);
   text-decoration: none;
   cursor:pointer;
 }
@@ -110,43 +114,22 @@ h1, h2, h3, h4, h5, .nmg-font {
 .nmg-theme-text-default {
   color:$theme-text-color-poppy;
 }
-.nmg-theme-text-default > a {
-  color:$theme-text-color-poppy;
-}
 .nmg-theme-text-about {
-  color:$theme-text-color-poppy;
-}
-.nmg-theme-text-about > a {
   color:$theme-text-color-poppy;
 }
 .nmg-theme-text-curriculum {
   color:$theme-text-color-poppy;
 }
-.nmg-theme-text-curriculum > a {
-  color:$theme-text-color-poppy;
-}
 .nmg-theme-text-community {
-  color:$theme-text-color-poppy;
-}
-.nmg-theme-text-community > a {
   color:$theme-text-color-poppy;
 }
 .nmg-theme-text-programs {
   color:$theme-text-color-poppy;
 }
-.nmg-theme-text-programs > a {
-  color:$theme-text-color-poppy;
-}
 .nmg-theme-text-events {
   color:$theme-text-color-poppy;
 }
-.nmg-theme-text-events > a {
-  color:$theme-text-color-poppy;
-}
 .nmg-theme-text-parents {
-  color:$theme-text-color-poppy;
-}
-.nmg-theme-text-parents > a {
   color:$theme-text-color-poppy;
 }
 
@@ -268,4 +251,22 @@ h1, h2, h3, h4, h5, .nmg-font {
 .nmg-login {
   padding-top:20px;
   padding-bottom:20px;
+}
+
+/* ==========================================================================
+    RESPONSIVE VIDEO CONTAINER
+   ========================================================================== */
+.nmg-video-container {
+    position: relative;
+    padding-bottom: 56.25%; // ratio. 360 / 640
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.nmg-video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

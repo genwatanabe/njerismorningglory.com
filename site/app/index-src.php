@@ -101,7 +101,7 @@
 
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="text-center {{nmgThemeTextClass}} nmg-landing-ad-box">
+          <div class="text-center nmg-landing-ad-box">
 
             <p><br></p>
 
