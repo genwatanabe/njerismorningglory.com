@@ -20,7 +20,7 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
 
   $routeProvider
     .when('/', {
-      templateUrl: 'app/landing/landing.html'
+      templateUrl: 'app/landing/landing.html?_='+Math.random()
 
       // run before templateUrl/controller run.
       /*
