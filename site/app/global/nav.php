@@ -60,11 +60,16 @@
                     <a href="#/events/amahl">Amahl and the Night Visitors</a>
             </div>
             <div class="nmg-nav-col">
-                	<h4>Community</h4>
+                    <h4>Community</h4>
                     <a href="#/community/activities">School Activities</a>
                     <a href="http://njerismorningglory.com/blog/" target="_blank">Our Blog</a>
                     <a href="http://sjwaldorf1.exblog.jp/" target="_blank">Japanese Blog</a>
                     <a href="#/community/links">Links</a>
+            </div>
+            <div class="nmg-nav-col">
+                    <h4>Photo Gallery</h4>
+                    <a href="#/photogallery/ancient-olympic">Ancient Olympic</a>
+                    <a href="#/photogallery/spring-faire">Spring Faire</a>
             </div>
         </div>
     </div>
