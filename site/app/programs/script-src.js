@@ -66,3 +66,16 @@ programsModule.controller('HOACarouselCtrl', ['$scope', 'HOACarouselService', fu
   });
 
 }]);
+
+programsModule.factory('SUMCarouselService', ['$resource', function($resource) {
+  return $resource('app/programs/data/carousel-sum.json'+'?_=' + Math.random());
+}]);
+
+programsModule.controller('SUMCarouselCtrl', ['$scope', 'SUMCarouselService', function($scope, SUMCarouselService) {
+  $scope.myInterval = 7000;
+
+  SUMCarouselService.query(function(data){
+    $scope.slides = data;
+  });
+
+}]);
