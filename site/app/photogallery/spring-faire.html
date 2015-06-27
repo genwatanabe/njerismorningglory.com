@@ -1,0 +1,22 @@
+<photogallery-directive title="Spring Faire">
+
+    <div class="row nmg-photogallery-bg-light">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p>&nbsp;</p>
+            <p class="lead">Every year we make May crowns before we dance around the Maypole. This year we had accordion players to keep our feet moving.</p>
+            <p class="lead">There were so many more things to do like sword making, silk dyeing. There was also a beanbag toss with goldfish as a prize and lots of homemade goodies to take home!</p>
+        </div>
+    </div>
+
+    <div class="row" ng-controller="SFCarouselCtrl">
+      <div ng-repeat="slide in slides" active="slide.active">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p class="lead">{{slide.text}}</p>
+          <img ng-src="{{slide.image}}">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+
+</photogallery-directive>

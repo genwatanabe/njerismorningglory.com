@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="container">
+		<h3 class="nmg-section-title">Photo Gallery</h3>
+
+		<tabset class="nmg-font">
+			<tab class="nmg-theme-text-photogallery" heading="Ancient Olympic" ng-click="openPage('#/photogallery/ancient-olympic')" active="tab.isActive1"></tab>
+			<tab class="nmg-theme-text-photogallery" heading="Spring Faire" ng-click="openPage('#/photogallery/spring-faire')" active="tab.isActive2"></tab>
+		</tabset>
+
+		<h2 class="nmg-theme-text-photogallery nmg-page-title">{{title}}</h2>
+		<div ng-transclude>
+	</div>
+</div>

@@ -9,6 +9,7 @@ var app = angular.module('app', [
   'app.about',
   'app.curriculum',
   'app.parents',
+  'app.photogallery',
   'app.programs',
   'app.community',
   'app.events'
@@ -103,6 +104,16 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     })
     .when('/programs/ski-week-art-camp', {
       templateUrl: 'app/programs/ski-week-art-camp.html?_='+Math.random()
+    })
+
+    .when('/photogallery', {
+      templateUrl: 'app/photogallery/ancient-olympic.html?_='+Math.random()
+    })
+    .when('/photogallery/ancient-olympic', {
+      templateUrl: 'app/photogallery/ancient-olympic.html?_='+Math.random()
+    })
+    .when('/photogallery/spring-faire', {
+      templateUrl: 'app/photogallery/spring-faire.html?_='+Math.random()
     })
 
     .when('/parents/calendar', {
