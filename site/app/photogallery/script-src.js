@@ -26,6 +26,7 @@ photogalleryModule.directive('photogalleryDirective', function() {
             $scope.tab = {};
             $scope.tab.isActive1 = false;
             $scope.tab.isActive2 = false;
+            $scope.tab.isActive3 = false;
 
             // Set the default active tab based on the url path.
             switch ($location.path()) {
@@ -34,6 +35,9 @@ photogalleryModule.directive('photogalleryDirective', function() {
                     break;
                 case '/photogallery/spring-faire':
                     $scope.tab.isActive2 = true;
+                    break;
+                case '/photogallery/yosemitefaire':
+                    $scope.tab.isActive3 = true;
                     break;
             }
 
@@ -49,25 +53,43 @@ photogalleryModule.directive('photogalleryDirective', function() {
 photogalleryModule.factory('AOCarouselService', ['$resource', function($resource) {
   return $resource('app/photogallery/data/carousel-ancient-olympic.json'+'?_=' + Math.random());
 }]);
-
 photogalleryModule.controller('AOCarouselCtrl', ['$scope', 'AOCarouselService', function($scope, AOCarouselService) {
   $scope.myInterval = 7000;
 
   AOCarouselService.query(function(data){
     $scope.slides = data;
   });
-
 }]);
 
 photogalleryModule.factory('SFCarouselService', ['$resource', function($resource) {
   return $resource('app/photogallery/data/carousel-spring-faire.json'+'?_=' + Math.random());
 }]);
-
 photogalleryModule.controller('SFCarouselCtrl', ['$scope', 'SFCarouselService', function($scope, SFCarouselService) {
   $scope.myInterval = 7000;
 
   SFCarouselService.query(function(data){
     $scope.slides = data;
   });
+}]);
 
+photogalleryModule.factory('YosemiteCarouselService', ['$resource', function($resource) {
+  return $resource('app/photogallery/data/carousel-yosemite.json'+'?_=' + Math.random());
+}]);
+photogalleryModule.controller('YosemiteCarouselCtrl', ['$scope', 'YosemiteCarouselService', function($scope, YosemiteCarouselService) {
+  $scope.myInterval = 7000;
+
+  YosemiteCarouselService.query(function(data){
+    $scope.slides = data;
+  });
+}]);
+
+photogalleryModule.factory('YosemitePhotoService', ['$resource', function($resource) {
+  return $resource('app/photogallery/data/photo-yosemite.json'+'?_=' + Math.random());
+}]);
+photogalleryModule.controller('YosemitePhotoCtrl', ['$scope', 'YosemitePhotoService', function($scope, YosemitePhotoService) {
+  $scope.myInterval = 7000;
+
+  YosemitePhotoService.query(function(data){
+    $scope.slides = data;
+  });
 }]);
