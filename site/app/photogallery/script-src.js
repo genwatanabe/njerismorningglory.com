@@ -39,6 +39,9 @@ photogalleryModule.directive('photogalleryDirective', function() {
                 case '/photogallery/yosemitefaire':
                     $scope.tab.isActive3 = true;
                     break;
+                case '/photogallery/china-town':
+                    $scope.tab.isActive4 = true;
+                    break;
             }
 
             // Change the header/footer area text style by the theme of the background.
