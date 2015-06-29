@@ -115,6 +115,9 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     .when('/photogallery/spring-faire', {
       templateUrl: 'app/photogallery/spring-faire.html?_='+Math.random()
     })
+    .when('/photogallery/yosemite', {
+      templateUrl: 'app/photogallery/yosemite.html?_='+Math.random()
+    })
 
     .when('/parents/calendar', {
       templateUrl: 'app/parents/calendar.html?_='+Math.random()
