@@ -53,6 +53,7 @@
             </div>
             <div class="nmg-nav-col">
                 	<h4>Events</h4>
+                    <a href="#/events/upcoming">Upcoming Events</a>
                     <a href="#/events/open-house">Open House</a>
                     <a href="#/events/spring-faire">Spring Faire</a>
                     <!-- <a href="#/events/mfj">Magic Forest Journey</a> -->

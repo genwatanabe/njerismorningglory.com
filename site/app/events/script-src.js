@@ -19,6 +19,7 @@ eventsModule.directive('eventsDirective', function() {
             };
 
             $scope.tab = {};
+            $scope.tab.isUpcomingEventsActive = false;
             $scope.tab.isOpenHouseActive   = false;
             $scope.tab.isSpringFaireActive = false;
             $scope.tab.isMFJActive         = false;
@@ -27,6 +28,9 @@ eventsModule.directive('eventsDirective', function() {
 
             // Set the default active tab based on the url path.
             switch ($location.path()) {
+                case '/events/upcoming':
+                    $scope.tab.isUpcomingEventsActive = true;
+                    break;
                 case '/events/open-house':
                     $scope.tab.isOpenHouseActive = true;
                     break;

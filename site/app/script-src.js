@@ -136,6 +136,9 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
       templateUrl: 'app/community/links.html?_='+Math.random()
     })
 
+    .when('/events/upcoming', {
+      templateUrl: 'app/events/upcoming.html?_='+Math.random()
+    })
     .when('/events/open-house', {
       templateUrl: 'app/events/open-house.html?_='+Math.random()
     })
