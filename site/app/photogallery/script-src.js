@@ -27,6 +27,8 @@ photogalleryModule.directive('photogalleryDirective', function() {
             $scope.tab.isActive1 = false;
             $scope.tab.isActive2 = false;
             $scope.tab.isActive3 = false;
+            $scope.tab.isActive4 = false;
+            $scope.tab.isActive5 = false;
 
             // Set the default active tab based on the url path.
             switch ($location.path()) {
@@ -41,6 +43,9 @@ photogalleryModule.directive('photogalleryDirective', function() {
                     break;
                 case '/photogallery/china-town':
                     $scope.tab.isActive4 = true;
+                    break;
+                case '/photogallery/mae':
+                    $scope.tab.isActive5 = true;
                     break;
             }
 
@@ -93,6 +98,17 @@ photogalleryModule.controller('YosemitePhotoCtrl', ['$scope', 'YosemitePhotoServ
   $scope.myInterval = 7000;
 
   YosemitePhotoService.query(function(data){
+    $scope.slides = data;
+  });
+}]);
+
+photogalleryModule.factory('MAECarouselService', ['$resource', function($resource) {
+  return $resource('app/photogallery/data/carousel-mae.json'+'?_=' + Math.random());
+}]);
+photogalleryModule.controller('MAECarouselCtrl', ['$scope', 'MAECarouselService', function($scope, MAECarouselService) {
+  $scope.myInterval = 7000;
+
+  MAECarouselService.query(function(data){
     $scope.slides = data;
   });
 }]);

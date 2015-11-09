@@ -121,6 +121,9 @@ app.config(['$routeProvider','$logProvider', function($routeProvider, $logProvid
     .when('/photogallery/china-town', {
       templateUrl: 'app/photogallery/china-town.html?_='+Math.random()
     })
+    .when('/photogallery/mae', {
+      templateUrl: 'app/photogallery/mae.html?_='+Math.random()
+    })
 
     .when('/parents/calendar', {
       templateUrl: 'app/parents/calendar.html?_='+Math.random()
