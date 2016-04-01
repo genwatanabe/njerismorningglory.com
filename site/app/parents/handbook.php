@@ -23,14 +23,16 @@
 	            <tbody>
 	                <tr>
 	                    <td>
-	                        <p><a href="assets/pdf/parents/NMG_Parent_Hand_Book_2013to2014_0818.pdf"><img src="assets/img/parents/parent_handbook_cover_2013.png" width="165" height="220" alt="Parent Handbook 2012-2013 Cover" title="PLEASE RIGHT CLICK AND CHOOSE THE 'SAVE AS...' OPTION."/>
+	                        <p><a href="assets/pdf/parents/NMG_Parent_Hand_Book_2016to2017.pdf"><img src="assets/img/parents/parent_handbook_cover_2013.png" alt="Parent Handbook 2016-2017 Cover" title="PLEASE RIGHT CLICK AND CHOOSE THE 'SAVE AS...' OPTION."/>
 	                        </a></p>
-	                        <p>(<a href="assets/pdf/parents/NMG_Parent_Hand_Book_2013to2014_0818.pdf" title="PLEASE RIGHT CLICK AND CHOOSE THE 'SAVE AS...' OPTION.">Download PDF</a>)</p>
+	                        <p>(<a href="assets/pdf/parents/NMG_Parent_Hand_Book_2016to2017.pdf" title="PLEASE RIGHT CLICK AND CHOOSE THE 'SAVE AS...' OPTION.">Download PDF</a>)</p>
 	                    </td>
 	                    <td>
-	                        <p>Parent Handbook 2013-2014 for Njeri's Morning Glory School and Art Center</p>
+	                        <p>Parent Handbook 2016-2017 for Njeri's Morning Glory School and Art Center</p>
 	                    </td>
 	                </tr>
+	                
+	                <!--
 	                <tr>
 	                    <td>
 	                        <p><a href="assets/pdf/parents/Handbook_Acknowledgement_20130818.pdf"><img src="assets/img/parents/Acknowledgements.jpg" width="161" height="201" alt="Acknowledgements" /></a></p>
@@ -39,7 +41,6 @@
 	                    <td>
 	                        <p>Handbook Acknowledgement form</p>
                         	<p>Acknowlege that you've read this handbook</p>
-                        	<!--<p> <font color="red"><strong>Due September 6, 2013</strong></font></p>-->
 	                    </td>
 	                </tr>
 	                <tr>
@@ -49,9 +50,9 @@
 	                    </td>
 	                    <td>
 	                        <p>Nature Day/Field Trip Safety Procedures Acknowledgement and Parent Approval form</p>
-                        	<!--<p> <font color="red"><strong>Due one week prior to each event</strong></font></p>-->
 	                    </td>
 	                </tr>
+	                -->
 	            </tbody>
 	        </table>
 
